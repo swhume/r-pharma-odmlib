@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Workshop
+.idea/
+.venv/
+output/
+*/output/
+solutions/output/
+.ipynb_checkpoints/
+odmlib_skill_output/
