@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Run sheet — Block 1 — Read, Explore, and Report</title>
+<style>
+:root { --ink:#31404b; --muted:#6b7b87; --rule:#d8dee3; --accent:#c26a3a; --bg:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px 34px; background:var(--bg); color:var(--ink);
+       font-family:'Lato','Noto Sans',system-ui,sans-serif; font-size:11.5pt; line-height:1.45; }
+header { border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:18px; }
+h1 { font-size:17pt; margin:0 0 4px; font-weight:900; letter-spacing:-.01em; }
+.timing { color:var(--muted); font-size:10.5pt; font-weight:700; }
+.deck { color:var(--muted); font-size:9.5pt; font-family:'DejaVu Sans Mono',monospace; }
+.slide { display:grid; grid-template-columns:52px 1fr; gap:0 14px;
+         padding:10px 0; border-bottom:1px solid var(--rule); break-inside:avoid; }
+.num { font-family:'DejaVu Sans Mono',monospace; font-size:10pt; font-weight:700;
+       color:var(--muted); padding-top:2px; white-space:nowrap; }
+.title { font-weight:900; font-size:12pt; margin-bottom:3px; }
+.note { white-space:pre-wrap; color:#3d4c57; }
+.note code, .title code { font-family:'DejaVu Sans Mono',monospace; font-size:.92em;
+       background:#eef1f3; padding:0 3px; border-radius:2px; }
+.nonote { color:var(--muted); font-style:italic; }
+.handoff { grid-column:1 / -1; margin:8px 0 2px; padding:7px 11px; border-radius:3px;
+           background:#fbf0e8; border-left:4px solid var(--accent);
+           font-weight:900; font-size:11pt; color:#8a4520; break-inside:avoid; }
+.handoff code { background:rgba(255,255,255,.65); }
+footer { margin-top:20px; padding-top:9px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:9.5pt; display:flex; justify-content:space-between; }
+@media print {
+  body { padding:0; font-size:10.5pt; }
+  @page { margin:14mm 13mm; }
+  header { position:running(head); }
+}
+</style></head>
+<body>
+<header>
+  <h1>Block 1 — Read, Explore, and Report</h1>
+  <div class="timing">4 min slides · 9 min notebook · 2 min hand-off</div>
+  <div class="deck">slides/block1_read_explore.md · 5 slides</div>
+</header>
+<div class="slide"><div class="num">1/5</div><div><div class="title">Block 1</div><div class="note">Where we are: segment 2 of 8. This is the &quot;load&quot; third of the odmlib development
+loop from the intro. Four minutes of slides, then I drive a live notebook, then
+you take the exercise. Everything I run is in 01_read_explore/lecture_demo.ipynb -
+you have it, you can follow along or just watch.</div></div></div><div class="slide"><div class="num">2/5</div><div><div class="title">The one idea</div><div class="note">This is the slide that matters. Everything else in the block follows from it.
+The arrow is the point: ItemRef carries an OID string that names an ItemDef -
+Define-XML is a graph, and in a moment you&#x27;ll see find() traverse that edge in
+one line instead of a nested loop.</div></div></div><div class="slide"><div class="num">3/5</div><div><div class="title">Three idioms — that&#x27;s the whole block</div><div class="note">Signatures only - the worked examples are in the lecture notes and I&#x27;m about to
+run all of this live. Two things to flag now because they cause most of the
+exercise stumbles: model_package is required (v2.0 is the default), and text
+lives in _content, not .text.</div></div></div><div class="slide"><div class="num">4/5</div><div><div class="title">Beyond Define-XML</div><div class="note">Breadth message - I&#x27;m not demoing this, the stretch goal does it for you in two
+lines. The ODM row is the one gotcha worth remembering: an ODM file can carry many
+studies, so those are lists there and single objects here.</div></div></div><div class="handoff">▶ SWITCH TO THE NOTEBOOK — <code>01_read_explore/lecture_demo.ipynb</code> — then return for the last slide</div><div class="slide"><div class="num">5/5</div><div><div class="title">Watch out for these</div><div class="note">Read these out - they are the five things that will cost someone five minutes
+otherwise. The last one bites in TODO 3 specifically.
+Hand-off: full detail is in 01_read_explore/lecture_notes.md, open it beside the
+notebook. Solutions folder is the safety net, not cheating. Back in 20 minutes.</div></div></div>
+<footer><span>R/Pharma 2026 · Creating Define-XML Solutions Using Python and odmlib</span>
+<span>Run sheet — not for sharing on screen</span></footer>
+</body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Run sheet — Block 3 — Validate and Check</title>
+<style>
+:root { --ink:#31404b; --muted:#6b7b87; --rule:#d8dee3; --accent:#c26a3a; --bg:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px 34px; background:var(--bg); color:var(--ink);
+       font-family:'Lato','Noto Sans',system-ui,sans-serif; font-size:11.5pt; line-height:1.45; }
+header { border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:18px; }
+h1 { font-size:17pt; margin:0 0 4px; font-weight:900; letter-spacing:-.01em; }
+.timing { color:var(--muted); font-size:10.5pt; font-weight:700; }
+.deck { color:var(--muted); font-size:9.5pt; font-family:'DejaVu Sans Mono',monospace; }
+.slide { display:grid; grid-template-columns:52px 1fr; gap:0 14px;
+         padding:10px 0; border-bottom:1px solid var(--rule); break-inside:avoid; }
+.num { font-family:'DejaVu Sans Mono',monospace; font-size:10pt; font-weight:700;
+       color:var(--muted); padding-top:2px; white-space:nowrap; }
+.title { font-weight:900; font-size:12pt; margin-bottom:3px; }
+.note { white-space:pre-wrap; color:#3d4c57; }
+.note code, .title code { font-family:'DejaVu Sans Mono',monospace; font-size:.92em;
+       background:#eef1f3; padding:0 3px; border-radius:2px; }
+.nonote { color:var(--muted); font-style:italic; }
+.handoff { grid-column:1 / -1; margin:8px 0 2px; padding:7px 11px; border-radius:3px;
+           background:#fbf0e8; border-left:4px solid var(--accent);
+           font-weight:900; font-size:11pt; color:#8a4520; break-inside:avoid; }
+.handoff code { background:rgba(255,255,255,.65); }
+footer { margin-top:20px; padding-top:9px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:9.5pt; display:flex; justify-content:space-between; }
+@media print {
+  body { padding:0; font-size:10.5pt; }
+  @page { margin:14mm 13mm; }
+  header { position:running(head); }
+}
+</style></head>
+<body>
+<header>
+  <h1>Block 3 — Validate and Check</h1>
+  <div class="timing">4 min slides · 9 min notebook · 2 min hand-off</div>
+  <div class="deck">slides/block3_validate_check.md · 6 slides</div>
+</header>
+<div class="slide"><div class="num">1/6</div><div><div class="title">Block 3</div><div class="note">Segment 4 of 8, and the payoff for the whole workshop. A define.xml that &quot;looks
+right&quot; can be broken in ways that surface weeks later - at a gateway, in a
+downstream tool, in a reviewer&#x27;s browser. Validation-first catches them at the
+moment they&#x27;re introduced.</div></div></div><div class="slide"><div class="num">2/6</div><div><div class="title">Four layers, four failure classes</div><div class="note">Spend real time here - this is the most valuable slide in the workshop. Layer by
+layer, say what each one sees that the others are blind to. To XSD an OID is just
+a string, so it cannot check layer 2. Layer 3 works on objects you haven&#x27;t
+serialized yet, which XSD structurally cannot do. In the exercise you meet one
+file that passes the object checks and fails only XSD, and another that does
+exactly the reverse.</div></div></div><div class="slide"><div class="num">3/6</div><div><div class="title">Your default call</div><div class="note">Filter by exception type - OdmlibOIDError, OdmlibConformanceError,
+OdmlibElementOrderError - to group a report. Before 0.2.1 this stopped after a
+few errors, so you fixed one, re-ran, found the next. Now you fix in bulk.</div></div></div><div class="slide"><div class="num">4/6</div><div><div class="title">What <code>validate()</code> misses: XSD</div><div class="note">This is the single most common misconception about odmlib validation - people run
+validate(), see an empty list, and assume schema-valid. Say it plainly: validate()
+plus validate_file(), every time.</div></div></div><div class="slide"><div class="num">5/6</div><div><div class="title">The repair loop</div><div class="note">Note the order inside the loop: fix dangling references BEFORE hunting orphans,
+because unreferenced_oids() verifies references first and raises while any remain.
+That ordering is the workflow, not a quirk. In ~20 lines the exercise builds the
+essence of a Define-XML repair tool.</div></div></div><div class="handoff">▶ SWITCH TO THE NOTEBOOK — <code>03_validate_check/lecture_demo.ipynb</code> — then return for the last slide</div><div class="slide"><div class="num">6/6</div><div><div class="title">Watch out for these</div><div class="note">Working cells run all four layers on a known-clean file; then you diagnose a
+schema-invalid file, repair one with reference errors until it validates clean,
+and discover why both XSD and the object checks are necessary. Stretch does a
+permissive-mode repair. Back in 20 minutes.</div></div></div>
+<footer><span>R/Pharma 2026 · Creating Define-XML Solutions Using Python and odmlib</span>
+<span>Run sheet — not for sharing on screen</span></footer>
+</body></html>

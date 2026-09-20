@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Run sheet — Block 2 — Generate a Minimal Define-XML v2.1</title>
+<style>
+:root { --ink:#31404b; --muted:#6b7b87; --rule:#d8dee3; --accent:#c26a3a; --bg:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px 34px; background:var(--bg); color:var(--ink);
+       font-family:'Lato','Noto Sans',system-ui,sans-serif; font-size:11.5pt; line-height:1.45; }
+header { border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:18px; }
+h1 { font-size:17pt; margin:0 0 4px; font-weight:900; letter-spacing:-.01em; }
+.timing { color:var(--muted); font-size:10.5pt; font-weight:700; }
+.deck { color:var(--muted); font-size:9.5pt; font-family:'DejaVu Sans Mono',monospace; }
+.slide { display:grid; grid-template-columns:52px 1fr; gap:0 14px;
+         padding:10px 0; border-bottom:1px solid var(--rule); break-inside:avoid; }
+.num { font-family:'DejaVu Sans Mono',monospace; font-size:10pt; font-weight:700;
+       color:var(--muted); padding-top:2px; white-space:nowrap; }
+.title { font-weight:900; font-size:12pt; margin-bottom:3px; }
+.note { white-space:pre-wrap; color:#3d4c57; }
+.note code, .title code { font-family:'DejaVu Sans Mono',monospace; font-size:.92em;
+       background:#eef1f3; padding:0 3px; border-radius:2px; }
+.nonote { color:var(--muted); font-style:italic; }
+.handoff { grid-column:1 / -1; margin:8px 0 2px; padding:7px 11px; border-radius:3px;
+           background:#fbf0e8; border-left:4px solid var(--accent);
+           font-weight:900; font-size:11pt; color:#8a4520; break-inside:avoid; }
+.handoff code { background:rgba(255,255,255,.65); }
+footer { margin-top:20px; padding-top:9px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:9.5pt; display:flex; justify-content:space-between; }
+@media print {
+  body { padding:0; font-size:10.5pt; }
+  @page { margin:14mm 13mm; }
+  header { position:running(head); }
+}
+</style></head>
+<body>
+<header>
+  <h1>Block 2 — Generate a Minimal Define-XML v2.1</h1>
+  <div class="timing">4 min slides · 9 min notebook · 2 min hand-off</div>
+  <div class="deck">slides/block2_create_define.md · 6 slides</div>
+</header>
+<div class="slide"><div class="num">1/6</div><div><div class="title">Block 2</div><div class="note">Segment 3 of 8. Block 1 read someone else&#x27;s define.xml; now we write one from
+scratch - a complete, schema-valid v2.1 describing a single DM dataset. This is
+the &quot;build + serialize&quot; third of the development loop.</div></div></div><div class="slide"><div class="num">2/6</div><div><div class="title">Why not hand-roll it?</div><div class="note">Callback to the intro deck&#x27;s ElementTree-vs-odmlib slide. The framing for the next
+15 minutes: everything on this list is something you are about to NOT do.</div></div></div><div class="slide"><div class="num">3/6</div><div><div class="title">What you&#x27;re building</div><div class="note">Keep this up while I live-code - it is the map for the next nine minutes. Two
+things to point at: the brace showing ItemGroupDef&#x27;s children go in schema order,
+and the leaf ID matching ArchiveLocationID, which is the cross-reference Block 3&#x27;s
+OID checker will verify.</div></div></div><div class="slide"><div class="num">4/6</div><div><div class="title">Five construction rules</div><div class="note">Rule 3 is the one people trip on and rule 5 is the one that surprises people.
+Construction checks attributes; validation checks structure. That split is
+deliberate - it&#x27;s why Block 3 exists.</div></div></div><div class="slide"><div class="num">5/6</div><div><div class="title">Getting it back out</div><div class="note">to_xml_string() on a single element is the debugging tool people don&#x27;t discover
+on their own - reach for it instead of print()ing an object.</div></div></div><div class="handoff">▶ SWITCH TO THE NOTEBOOK — <code>02_create_define/lecture_demo.ipynb</code> — then return for the last slide</div><div class="slide"><div class="num">6/6</div><div><div class="title">Watch out for these</div><div class="note">Root, Study, MetaDataVersion and Standards are given to you - you build the
+dataset, the variables, the codelist, then assemble and write. Stretch adds
+value-level metadata. The containment diagram slide is the map; keep the lecture
+notes open beside the notebook.</div></div></div>
+<footer><span>R/Pharma 2026 · Creating Define-XML Solutions Using Python and odmlib</span>
+<span>Run sheet — not for sharing on screen</span></footer>
+</body></html>
