@@ -87,7 +87,6 @@ element's descendants for objects of a given class with a matching attribute val
 
 ```python
 age = mdv.find("ItemDef", "OID", "IT.DM.AGE")          # first match or None
-# TODO consider changing the example to DataType float
 vs_items = mdv.find_all("ItemDef", "Name", "VSTESTCD") # every match, as a list
 ```
 
@@ -105,7 +104,6 @@ For reverse lookup — "who carries this OID?" — build the OID index once and 
 
 ```python
 idx = odm.build_oid_index()
-# TODO consider changing to find()
 idx.find_all("IT.DM.AGE")     # every object defining or referencing that OID
 ```
 

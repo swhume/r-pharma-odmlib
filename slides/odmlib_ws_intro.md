@@ -20,7 +20,7 @@ Welcome. The promise, in one sentence: in three hours you'll read, create, valid
 repair, and extend Define-XML v2.1 - and leave with tools and AI workflows you can
 use Monday.
 -->
-￼
+
 
 
 ---
@@ -68,6 +68,11 @@ nobody needs to memorize anything from the slides.
 ---
 
 # What is Define-XML?
+
+<style scoped>
+p { font-size: 0.92em; }
+ul { font-size: 0.9em; }
+</style>
 
 The **machine-readable data definitions** for a clinical study —
 required by FDA and PMDA for SDTM, SEND, and ADaM data.
@@ -171,6 +176,11 @@ ElementTree ships it silently; odmlib's OID checker names it.
 
 # Where odmlib is used
 
+<style scoped>
+p { font-size: 0.86em; }
+ul { font-size: 0.78em; line-height: 1.34; }
+</style>
+
 An ecosystem of tools with odmlib as the engine:
 
 - **CORE** - CDISC Open Rules Engine
@@ -229,6 +239,12 @@ parser. Everything on this slide gets used in today's exercises and demos.
 
 # AI-assisted odmlib development
 
+<style scoped>
+p { font-size: 0.88em; }
+ul { font-size: 0.86em; }
+blockquote { font-size: 0.8em; }
+</style>
+
 The **odmlib skill**: curated instructions + API reference + runnable
 examples that load into an AI coding assistant (Claude Code).
 
@@ -283,6 +299,8 @@ Prefer VS Code or PyCharm notebooks? Both work — see the setup notes.
 
 <!--
 Have everyone start the install now - the remaining slides play while pip runs.
+Ask people to post blockers in the chat as they hit them; I triage there and drop
+anyone still stuck into a breakout room rather than holding the room.
 Requirements: odmlib 0.2.1+, defineutils, JupyterLab. Python 3.10+ required.
 -->
 
@@ -302,7 +320,7 @@ defineutils is installed
 ✅ You are ready for Block 1
 ```
 
-Problems? See `setup_instructions.md` — or wave.
+Problems? See `setup_instructions.md` — or **drop it in the chat**.
 
 <!--
 The common fixes: python3 vs python, Windows execution
@@ -333,7 +351,7 @@ one that catches it.
 
 # Ground rules
 
-- **Questions anytime** — interrupting is participating
+- **Questions anytime** — drop them in the chat, I read it between beats
 - Exercises are **self-paced** — stretch goals if you finish early
 - The **`solutions/` folder is not cheating** — it's the safety net
 - Everything is yours to keep: repo, data, notebooks, slides
@@ -342,5 +360,5 @@ one that catches it.
 
 <!--
 Flex slide - absorb setup overruns here; cut if on time. Then segue straight into
-the Block 1 lecture: open 01_read_explore/lecture_notes.md.
+the Block 1 lecture: open slides/block1_read_explore.md.
 -->
