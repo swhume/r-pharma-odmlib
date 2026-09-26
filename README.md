@@ -9,6 +9,15 @@ assumed (no prior odmlib experience needed).
 
 ## Quick start
 
+The notebooks are standard `.ipynb` files, so you have several options for creating an environment for completing the 
+workshop. Any environment that runs Python Jupyter Notebooks should work. See 
+[`00_setup/setup_instructions.md`](00_setup/setup_instructions.md) for more details. 
+
+### To use the Posit Cloud
+Follow instructions from R/Pharma to access the "R/Pharma 2026 Creating Define-XML Solutions Using Python and odmlib" 
+workspace and the "r-pharma-odmlib" project. The project repository is already cloned in this environment.
+
+### To use Jupyter Lab
 ```bash
 git clone https://github.com/swhume/r-pharma-odmlib.git
 cd r-pharma-odmlib
