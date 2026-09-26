@@ -1,13 +1,21 @@
 # Environment Setup
 
-Get your environment ready before the first exercise block. This takes about 5 minutes.
+Get your environment ready before the first exercise block. This takes about 5 minutes. The notebooks are standard 
+`.ipynb` files, so you have several options for creating an environment for completing the workshop. 
 
 ## Prerequisites
 
 - **Python 3.10 or later** (3.12 recommended). Check with `python --version` (on some systems `python3 --version`).
 - **git** to clone the workshop repository.
 
-## Setup steps
+## Setup instructions to use Posit Cloud
+
+You should receive instructions from R/Pharma about accessing the Workshop in Posit Cloud. The Posit Cloud 
+Workspace for this workshop is named "R/Pharma 2026 Creating Define-XML Solutions Using Python and odmlib".
+The project is "r-pharma-odmlib" and was created from the GitHub repository for this workshop. The
+instructions should give you the details needed to sign-on and access the project.
+
+## Setup steps to use Jupyter Lab
 
 Run these commands in a terminal:
 
@@ -30,7 +38,7 @@ jupyter lab
 
 JupyterLab opens in your browser. In the file browser on the left, open `00_setup/verify_setup.ipynb` and run all cells (menu: **Run → Run All Cells**). If the final cell prints a success message, you are ready for Block 1.
 
-## Alternatives to JupyterLab
+## Alternatives Setup Options
 
 The notebooks are standard `.ipynb` files, so if you prefer another editor you can use it instead:
 

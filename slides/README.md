@@ -8,6 +8,7 @@ Marp decks (`marp: true`, `theme: gaia`). One deck per lecture segment:
 | `block1_read_explore.md` | 2 — Block 1 lecture (15 min) | 5 |
 | `block2_create_define.md` | 3 — Block 2 lecture (15 min) | 6 |
 | `block3_validate_check.md` | 4 — Block 3 lecture (15 min) | 6 |
+| `odmlib_ws_conclusion.md` | 8 — Q&A and conclusion (10 min) | 5 |
 
 Each block lecture is **~4 min slides + ~9 min live notebook + ~2 min hand-off**.
 The live notebook for each block is `<block_folder>/lecture_demo.ipynb`; the
@@ -19,7 +20,7 @@ during the exercise, not from the podium.
 ## Building
 
 ```bash
-./slides/build.sh                      # all four decks
+./slides/build.sh                      # all decks
 ./slides/build.sh block1_read_explore  # just one
 ```
 

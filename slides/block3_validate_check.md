@@ -27,6 +27,7 @@ moment they're introduced.
 
 <style scoped>
 table { font-size: 0.62em; }
+td:first-child { white-space: nowrap; }
 </style>
 
 | Layer | Catches | One-liner |

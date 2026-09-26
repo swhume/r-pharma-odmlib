@@ -9,7 +9,7 @@
 # Roboto Mono at export time, and they get embedded into the PDF. Presenting needs
 # neither. Run this the day before, not five minutes before.
 #
-# Usage:  ./slides/build.sh  [deck-name ...]     (default: all four decks)
+# Usage:  ./slides/build.sh  [deck-name ...]     (default: all decks)
 
 set -euo pipefail
 
@@ -18,7 +18,7 @@ cd "$(dirname "$0")/.."
 MARP=(npx --yes @marp-team/marp-cli@latest)
 DECKS=("${@:-}")
 if [ -z "${DECKS[0]:-}" ]; then
-    DECKS=(odmlib_ws_intro block1_read_explore block2_create_define block3_validate_check)
+    DECKS=(odmlib_ws_intro block1_read_explore block2_create_define block3_validate_check odmlib_ws_conclusion)
 fi
 
 # npx usually isn't on PATH in a non-interactive shell when Node came from nvm.
