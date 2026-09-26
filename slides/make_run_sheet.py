@@ -51,6 +51,13 @@ DECKS = [
         "handoff_before": 6,
         "handoff_text": "03_validate_check/lecture_demo.ipynb",
     },
+    {
+        "file": "odmlib_ws_conclusion.md",
+        "title": "Q&A and Conclusion",
+        "timing": "10 min · segment 8 of 8",
+        "handoff_before": None,
+        "handoff_text": None,
+    },
 ]
 
 CSS = """

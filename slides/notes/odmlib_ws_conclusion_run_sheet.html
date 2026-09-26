@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Run sheet — Q&amp;A and Conclusion</title>
+<style>
+:root { --ink:#31404b; --muted:#6b7b87; --rule:#d8dee3; --accent:#c26a3a; --bg:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px 34px; background:var(--bg); color:var(--ink);
+       font-family:'Lato','Noto Sans',system-ui,sans-serif; font-size:11.5pt; line-height:1.45; }
+header { border-bottom:3px solid var(--ink); padding-bottom:10px; margin-bottom:18px; }
+h1 { font-size:17pt; margin:0 0 4px; font-weight:900; letter-spacing:-.01em; }
+.timing { color:var(--muted); font-size:10.5pt; font-weight:700; }
+.deck { color:var(--muted); font-size:9.5pt; font-family:'DejaVu Sans Mono',monospace; }
+.slide { display:grid; grid-template-columns:52px 1fr; gap:0 14px;
+         padding:10px 0; border-bottom:1px solid var(--rule); break-inside:avoid; }
+.num { font-family:'DejaVu Sans Mono',monospace; font-size:10pt; font-weight:700;
+       color:var(--muted); padding-top:2px; white-space:nowrap; }
+.title { font-weight:900; font-size:12pt; margin-bottom:3px; }
+.note { white-space:pre-wrap; color:#3d4c57; }
+.note code, .title code { font-family:'DejaVu Sans Mono',monospace; font-size:.92em;
+       background:#eef1f3; padding:0 3px; border-radius:2px; }
+.nonote { color:var(--muted); font-style:italic; }
+.handoff { grid-column:1 / -1; margin:8px 0 2px; padding:7px 11px; border-radius:3px;
+           background:#fbf0e8; border-left:4px solid var(--accent);
+           font-weight:900; font-size:11pt; color:#8a4520; break-inside:avoid; }
+.handoff code { background:rgba(255,255,255,.65); }
+footer { margin-top:20px; padding-top:9px; border-top:1px solid var(--rule);
+         color:var(--muted); font-size:9.5pt; display:flex; justify-content:space-between; }
+@media print {
+  body { padding:0; font-size:10.5pt; }
+  @page { margin:14mm 13mm; }
+  header { position:running(head); }
+}
+</style></head>
+<body>
+<header>
+  <h1>Q&amp;A and Conclusion</h1>
+  <div class="timing">10 min · segment 8 of 8</div>
+  <div class="deck">slides/odmlib_ws_conclusion.md · 5 slides</div>
+</header>
+<div class="slide"><div class="num">1/5</div><div><div class="title">Conclusion</div><div class="note">Segment 8 of 8. Keep the slides short - the point of this segment is Q&amp;A. Put the
+links up, then open the floor. Leave the repos slide up while questions come in.</div></div></div><div class="slide"><div class="num">2/5</div><div><div class="title">Stay current on GitHub</div><div class="note">The ask: star or watch the repos - GitHub notifications are how you&#x27;ll hear about
+releases on the road to v1.0. Issues are the best way to shape what goes into v1.0,
+and PRs are welcome. The defineutils release is the natural next step after Block 3:
+the full set of published Define-XML conformance rules, plus odmlib&#x27;s own checks.</div></div></div><div class="slide"><div class="num">3/5</div><div><div class="title">More about odmlib</div><div class="note">PyPI for installing and release history; the blog for longer write-ups and
+announcements; the documentation site for the API and how-tos.</div></div></div><div class="slide"><div class="num">4/5</div><div><div class="title">Contact me</div><div class="note">For anyone who&#x27;d rather not post publicly, or has a question that isn&#x27;t
+really an issue.</div></div></div><div class="slide"><div class="num">5/5</div><div><div class="title">Thank you for attending!</div><div class="note">Thank everyone for their time. Remind them the repo stays up with solutions, and
+invite follow-up questions by email.</div></div></div>
+<footer><span>R/Pharma 2026 · Creating Define-XML Solutions Using Python and odmlib</span>
+<span>Run sheet — not for sharing on screen</span></footer>
+</body></html>
