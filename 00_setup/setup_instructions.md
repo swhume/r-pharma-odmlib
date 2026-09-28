@@ -8,12 +8,32 @@ Get your environment ready before the first exercise block. This takes about 5 m
 - **Python 3.10 or later** (3.12 recommended). Check with `python --version` (on some systems `python3 --version`).
 - **git** to clone the workshop repository.
 
-## Setup instructions to use Posit Cloud
+## Setup instructions to use Posit Workbench
 
-You should receive instructions from R/Pharma about accessing the Workshop in Posit Cloud. The Posit Cloud 
-Workspace for this workshop is named "R/Pharma 2026 Creating Define-XML Solutions Using Python and odmlib".
-The project is "r-pharma-odmlib" and was created from the GitHub repository for this workshop. The
-instructions should give you the details needed to sign-on and access the project.
+### Login Instructions:
+1. Go to [workshop.posit.team](https://workshop.posit.team/). 
+2. Click Sign in with OpenID and select New user? Register (make sure to include your first name and last initial), OR click Sign in to GitHub.
+
+### Launching Positron:
+1. In Workbench, select New Session.
+2. Click on Positron
+3. In the Image Options dropdown, just select the default image.
+4. Leave all other defaults as they are.
+5. Click Start Session.
+6. Select `New`, then `New Folder from Git...`, then enter the class repo: `https://github.com/swhume/r-pharma-odmlib`
+
+![Positron GitHub Setup](positron-github-setup.png)
+
+### Helpful Notes & Shortcuts:
+- When setting up, remember to launch a folder for AI.
+- Ctrl+Shift+P: Opens the Command Palette
+- Color Theme: Can be adjusted via the Command Palette
+- !Reload Window: Use this command if you need to refresh your view
+
+### AI Usage Guidelines 
+Posit Workbench has Bedrock and AI tools available. When using these features, please select the Anthropic Claude 
+Sonnet model. While we encourage you to take advantage of the AI and the environment, please be cautious about overall 
+usage limits and ensure students know these sessions will NOT persist after the workshop.
 
 ## Setup steps to use Jupyter Lab
 
@@ -44,6 +64,7 @@ The notebooks are standard `.ipynb` files, so if you prefer another editor you c
 
 - **VS Code**: install the *Python* and *Jupyter* extensions, open the repo folder, and select the `.venv` interpreter as the notebook kernel.
 - **PyCharm** (Professional): open the repo as a project with `.venv` as the interpreter and open the notebooks directly.
+- **Google Colab**: Another online alternative for running Jupyter Notebooks.
 
 The workshop is presented in JupyterLab, but any of these work fine.
 
