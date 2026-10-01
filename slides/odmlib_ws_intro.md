@@ -282,7 +282,36 @@ The CDISC domain knowledge is in the lecture notes and hints.
 
 ---
 
-# Environment setup — start now
+# Environment setup — Posit Workbench
+
+<style scoped>
+h1 { font-size: 1.45em; }
+ol { font-size: 0.8em; }
+p { font-size: 0.74em; }
+</style>
+
+1. **Sign in** at **[workshop.posit.team](https://workshop.posit.team/)** —
+   *Sign in with OpenID* (new user? **Register** with first name + last initial)
+   or *Sign in with GitHub*
+2. **New Session** → **Positron** → default image, other defaults →
+   **Start Session**
+3. **New** → **New Folder from Git…** →
+   `https://github.com/swhume/r-pharma-odmlib`
+4. In the Positron **Terminal**: `pip install -r requirements.txt`
+
+**AI:** choose the **Anthropic Claude Sonnet** model, and mind the usage limits.
+**Sessions do NOT persist after the workshop** — save anything you want to keep.
+
+<!--
+Posit Workbench is the zero-install path - recommend it to anyone on a locked-down
+laptop. Have everyone start now; the remaining slides play while sessions launch.
+Shortcuts worth mentioning: Ctrl+Shift+P opens the Command Palette (color theme,
+Reload Window). Full steps and a screenshot are in 00_setup/setup_instructions.md.
+-->
+
+---
+
+# Environment setup — JupyterLab
 
 ```bash
 git clone https://github.com/swhume/r-pharma-odmlib.git

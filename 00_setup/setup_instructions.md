@@ -22,6 +22,12 @@ Get your environment ready before the first exercise block. This takes about 5 m
 5. Click Start Session.
 6. Select `New`, then `New Folder from Git...`, then enter the class repo: `https://github.com/swhume/r-pharma-odmlib`
 
+7. Open a terminal in Positron (**Terminal → New Terminal**) and, from the repo folder, install the workshop dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ![Positron GitHub Setup](positron-github-setup.png)
 
 ### Helpful Notes & Shortcuts:
@@ -55,6 +61,7 @@ pip install -r requirements.txt
 # 4. Start JupyterLab
 jupyter lab
 ```
+python -m pip install --upgrade pip
 
 JupyterLab opens in your browser. In the file browser on the left, open `00_setup/verify_setup.ipynb` and run all cells (menu: **Run → Run All Cells**). If the final cell prints a success message, you are ready for Block 1.
 
@@ -66,7 +73,8 @@ The notebooks are standard `.ipynb` files, so if you prefer another editor you c
 - **PyCharm** (Professional): open the repo as a project with `.venv` as the interpreter and open the notebooks directly.
 - **Google Colab**: Another online alternative for running Jupyter Notebooks.
 
-The workshop is presented in JupyterLab, but any of these work fine.
+The workshop is presented using Positron in Posit Workbench, but any environment that runs Python Jupyter Notebooks
+should work fine.
 
 ## Troubleshooting
 
