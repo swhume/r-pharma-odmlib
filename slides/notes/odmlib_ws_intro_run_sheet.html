@@ -35,35 +35,38 @@ footer { margin-top:20px; padding-top:9px; border-top:1px solid var(--rule);
 <header>
   <h1>Introduction and Environment Setup</h1>
   <div class="timing">20 min · segment 1 of 8</div>
-  <div class="deck">slides/odmlib_ws_intro.md · 16 slides</div>
+  <div class="deck">slides/odmlib_ws_intro.md · 17 slides</div>
 </header>
-<div class="slide"><div class="num">1/16</div><div><div class="title">Creating Define-XML Solutions Using Python and odmlib</div><div class="note">Welcome. The promise, in one sentence: in three hours you&#x27;ll read, create, validate,
+<div class="slide"><div class="num">1/17</div><div><div class="title">Creating Define-XML Solutions Using Python and odmlib</div><div class="note">Welcome. The promise, in one sentence: in three hours you&#x27;ll read, create, validate,
 repair, and extend Define-XML v2.1 - and leave with tools and AI workflows you can
-use Monday.</div></div></div><div class="slide"><div class="num">2/16</div><div><div class="title">Agenda — 3 hours</div><div class="note">Three hands-on blocks form the core; three short demos follow; questions welcome
-throughout. Each block: short lecture, 20-minute exercise, 5-minute solution review.</div></div></div><div class="slide"><div class="num">3/16</div><div><div class="title">How the workshop works</div><div class="note">Set the rhythm expectation: lecture, then hands-on, then review - three times.
+use Monday.</div></div></div><div class="slide"><div class="num">2/17</div><div><div class="title">Agenda — 3 hours</div><div class="note">Three hands-on blocks form the core; three short demos follow; questions welcome
+throughout. Each block: short lecture, 20-minute exercise, 5-minute solution review.</div></div></div><div class="slide"><div class="num">3/17</div><div><div class="title">How the workshop works</div><div class="note">Set the rhythm expectation: lecture, then hands-on, then review - three times.
 The lecture notes contain worked examples that map 1:1 onto the exercise TODOs;
-nobody needs to memorize anything from the slides.</div></div></div><div class="slide"><div class="num">4/16</div><div><div class="title">What is Define-XML?</div><div class="note">Calibrate to the room - many know define.xml as &quot;that XML file&quot;. The key reframe:
+nobody needs to memorize anything from the slides.</div></div></div><div class="slide"><div class="num">4/17</div><div><div class="title">What is Define-XML?</div><div class="note">Calibrate to the room - many know define.xml as &quot;that XML file&quot;. The key reframe:
 it is not a document, it is a graph of cross-referenced metadata. That is why
-generic XML tooling falls short and why dedicated tooling matters.</div></div></div><div class="slide"><div class="num">5/16</div><div><div class="title">What is odmlib?</div><div class="note">Positioning: this is not an XML helper - it is a model of the standard itself.
+generic XML tooling falls short and why dedicated tooling matters.</div></div></div><div class="slide"><div class="num">5/17</div><div><div class="title">What is odmlib?</div><div class="note">Positioning: this is not an XML helper - it is a model of the standard itself.
 Namespaces, element order, and required attributes live in the model, not in
-your code. The snippet is real - students write this in Block 1.</div></div></div><div class="slide"><div class="num">6/16</div><div><div class="title">One library, the whole ODM family</div><div class="note">Today is Define-XML-focused, but Block 1&#x27;s stretch goal loads an ARM define with a
+your code. The snippet is real - students write this in Block 1.</div></div></div><div class="slide"><div class="num">6/17</div><div><div class="title">One library, the whole ODM family</div><div class="note">Today is Define-XML-focused, but Block 1&#x27;s stretch goal loads an ARM define with a
 two-line change. Dataset-JSON support connects directly to last year&#x27;s R/Pharma
-Dataset-JSON workshop.</div></div></div><div class="slide"><div class="num">7/16</div><div><div class="title">Why not hand-roll the XML?</div><div class="note">Key line: hand-rolling Define-XML is how subtle, expensive errors get made -
+Dataset-JSON workshop.</div></div></div><div class="slide"><div class="num">7/17</div><div><div class="title">Why not hand-roll the XML?</div><div class="note">Key line: hand-rolling Define-XML is how subtle, expensive errors get made -
 odmlib makes the correct way the easy way. Note the typo in both snippets:
-ElementTree ships it silently; odmlib&#x27;s OID checker names it.</div></div></div><div class="slide"><div class="num">8/16</div><div><div class="title">Where odmlib is used</div><div class="note">Personalize with 1-2 real adoption stories here. Segment 7 demos several of these
+ElementTree ships it silently; odmlib&#x27;s OID checker names it.</div></div></div><div class="slide"><div class="num">8/17</div><div><div class="title">Where odmlib is used</div><div class="note">Personalize with 1-2 real adoption stories here. Segment 7 demos several of these
 live - and the punchline lands after Block 3: metrics, validate, and definerefs are
-the workshop exercises, productized.</div></div></div><div class="slide"><div class="num">9/16</div><div><div class="title">The odmlib development loop</div><div class="note">The habit to leave with: validation-first. The four layers each catch what the
+the workshop exercises, productized.</div></div></div><div class="slide"><div class="num">9/17</div><div><div class="title">The odmlib development loop</div><div class="note">The habit to leave with: validation-first. The four layers each catch what the
 others cannot - students discover this concretely in Block 3, where one broken file
-passes the object checks and only fails XSD, and another does the reverse.</div></div></div><div class="slide"><div class="num">10/16</div><div><div class="title">What&#x27;s new in odmlib 0.2.1</div><div class="note">Message: an actively developed project with a real roadmap, not an abandoned
-parser. Everything on this slide gets used in today&#x27;s exercises and demos.</div></div></div><div class="slide"><div class="num">11/16</div><div><div class="title">AI-assisted odmlib development</div><div class="note">Plant the idea now, pay it off in the demo: after Blocks 1-3, students will
-recognize everything the AI does - the skill encodes this workshop.</div></div></div><div class="slide"><div class="num">12/16</div><div><div class="title">What you&#x27;ll build today</div><div class="note">Reassure on level: if you can write a loop and a function, you&#x27;re equipped.
-The CDISC domain knowledge is in the lecture notes and hints.</div></div></div><div class="slide"><div class="num">13/16</div><div><div class="title">Environment setup — start now</div><div class="note">Have everyone start the install now - the remaining slides play while pip runs.
+passes the object checks and only fails XSD, and another does the reverse.</div></div></div><div class="slide"><div class="num">10/17</div><div><div class="title">What&#x27;s new in odmlib 0.2.1</div><div class="note">Message: an actively developed project with a real roadmap, not an abandoned
+parser. Everything on this slide gets used in today&#x27;s exercises and demos.</div></div></div><div class="slide"><div class="num">11/17</div><div><div class="title">AI-assisted odmlib development</div><div class="note">Plant the idea now, pay it off in the demo: after Blocks 1-3, students will
+recognize everything the AI does - the skill encodes this workshop.</div></div></div><div class="slide"><div class="num">12/17</div><div><div class="title">What you&#x27;ll build today</div><div class="note">Reassure on level: if you can write a loop and a function, you&#x27;re equipped.
+The CDISC domain knowledge is in the lecture notes and hints.</div></div></div><div class="slide"><div class="num">13/17</div><div><div class="title">Environment setup — Posit Workbench</div><div class="note">Posit Workbench is the zero-install path - recommend it to anyone on a locked-down
+laptop. Have everyone start now; the remaining slides play while sessions launch.
+Shortcuts worth mentioning: Ctrl+Shift+P opens the Command Palette (color theme,
+Reload Window). Full steps and a screenshot are in 00_setup/setup_instructions.md.</div></div></div><div class="slide"><div class="num">14/17</div><div><div class="title">Environment setup — JupyterLab</div><div class="note">Have everyone start the install now - the remaining slides play while pip runs.
 Ask people to post blockers in the chat as they hit them; I triage there and drop
 anyone still stuck into a breakout room rather than holding the room.
-Requirements: odmlib 0.2.1+, defineutils, JupyterLab. Python 3.10+ required.</div></div></div><div class="slide"><div class="num">14/16</div><div><div class="title">Verify your setup</div><div class="note">The common fixes: python3 vs python, Windows execution
-policy for venv activation, corporate proxy flags for pip - all in the appendix.</div></div></div><div class="slide"><div class="num">15/16</div><div><div class="title">Meet the data</div><div class="note">The numbers matter: students compute exactly these counts in Block 1&#x27;s metrics
+Requirements: odmlib 0.2.1+, defineutils, JupyterLab. Python 3.10+ required.</div></div></div><div class="slide"><div class="num">15/17</div><div><div class="title">Verify your setup</div><div class="note">The common fixes: python3 vs python, Windows execution
+policy for venv activation, corporate proxy flags for pip - all in the appendix.</div></div></div><div class="slide"><div class="num">16/17</div><div><div class="title">Meet the data</div><div class="note">The numbers matter: students compute exactly these counts in Block 1&#x27;s metrics
 exercise. Each broken file exists because a different validation layer is the only
-one that catches it.</div></div></div><div class="slide"><div class="num">16/16</div><div><div class="title">Ground rules</div><div class="note">Flex slide - absorb setup overruns here; cut if on time. Then segue straight into
+one that catches it.</div></div></div><div class="slide"><div class="num">17/17</div><div><div class="title">Ground rules</div><div class="note">Flex slide - absorb setup overruns here; cut if on time. Then segue straight into
 the Block 1 lecture: open slides/block1_read_explore.md.</div></div></div>
 <footer><span>R/Pharma 2026 · Creating Define-XML Solutions Using Python and odmlib</span>
 <span>Run sheet — not for sharing on screen</span></footer>

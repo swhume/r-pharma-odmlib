@@ -4,7 +4,7 @@ Marp decks (`marp: true`, `theme: gaia`). One deck per lecture segment:
 
 | File | Segment | Slides |
 |------|---------|--------|
-| `odmlib_ws_intro.md` | 1 — Introduction and environment setup (20 min) | 16 |
+| `odmlib_ws_intro.md` | 1 — Introduction and environment setup (20 min) | 17 |
 | `block1_read_explore.md` | 2 — Block 1 lecture (15 min) | 5 |
 | `block2_create_define.md` | 3 — Block 2 lecture (15 min) | 6 |
 | `block3_validate_check.md` | 4 — Block 3 lecture (15 min) | 6 |
